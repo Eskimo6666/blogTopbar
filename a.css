@@ -1,56 +1,60 @@
 body{
     background-color: green;
-    color:white;
+    padding: 0;
     margin: 0;
 }
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
 a{
-    color:inherit;
     text-decoration: none;
 }
-.clearfix::after{
-    content:'';
-    clear: both;
-    display: block;
+.topNavBar{
+    padding-top: 15px;
+  
 }
+.topNavBar nav{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 14px;
+    margin-right: 29px;
+}
+.topNavBar nav ul li{
+    float: left;
+    margin-left: 17px;
+    margin-right: 17px;
+    
+   
+}
+.topNavBar nav ul li>a{
+    color:rgb(194,196,199);
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+    display: block;
+    padding-top: 3px;
+    padding-bottom: 3px;
+} 
 .topNavBar nav ul{
     padding: 0;
     margin: 0;
     list-style: none;
-
-}
-.topNavBar nav ul li{
-    float: left;
-    padding-left: 17px;
-    padding-right: 17px;
-   
-  
-}
-.topNavBar{
-    padding:20px 16px;
-}
-.topNavBar nav ul li a{
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    color: #B7B7B7;
-    padding-top:5px;
-    padding-bottom: 5px;
-    display: block;
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid transparent;
-}
-.topNavBar nav ul li a:hover{
-    border-bottom: 3px solid rgb(226, 127, 14);
+} 
+.topNavBar nav ul li>a:hover{
+    border-bottom: 3px solid rgb(232,103,107);
 }
 .topNavBar .logo{
-    font-size: 24px;
-    font-family:'Arial Black';
-    
+    font-size: 28px;
+    padding-top: 1px;
+    margin-left: 29px;
+    font-family: "Arial Black"; 
 }
 .topNavBar .logo .rs{
-    margin-right: 4px;
-    color: #E6686A;
+    color:rgb(232,103,107);
+    margin-right: 5px;
 }
 .topNavBar .logo .card{
-    color: #9A9DA2;
+    color: rgb(154,157,162);
 }
